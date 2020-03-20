@@ -1,0 +1,24 @@
+[
+  {
+    "id": 6,
+    "location": "London",
+    "service": "Planning in the store",
+    "uuid": "d85492ec-5dbf-783f-8682-517601d4b4b3",
+    "request": "6984427",
+    "payment_date": "2019-08-10 11:07:03",
+    "slot_date": "2019-08-10 12:07:03",
+    "answer_code": 0,
+    "service_message": "Successfully"
+  },
+  {
+    "id": 5,
+    "location": "Moscow",
+    "service": "Planning in the store",
+    "uuid": "d85592ec-5dbf-793f-8682-527601d4b4b3",
+    "request": "6984427",
+    "payment_date": "2019-10-10 21:07:03",
+    "slot_date": "2019-10-10 23:07:03",
+    "answer_code": 0,
+    "service_message": "Payment is canceled"
+  }
+]

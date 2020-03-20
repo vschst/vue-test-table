@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+$roboto: Roboto;
+
+.fonts {
+  &__roboto {
+    font-family: $roboto;
+
+    &_regular {
+      font-family: $roboto;
+    }
+
+    &_bold {
+      font-family: $roboto;
+      font-weight: bold;
+    }
+  }
+}

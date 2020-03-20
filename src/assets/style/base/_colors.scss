@@ -1,0 +1,21 @@
+$white: #ffffff;
+$white-d: #fcfcfc;
+$gray: #cccccc;
+$gray-l: #f5f5f5;
+$gray-d: #333333;
+
+.colors {
+  &__font {
+    &_gray-d {
+      color: $gray-d;
+    }
+  }
+  &__background {
+    &_white {
+      background-color: $white;
+    }
+    &_gray-l {
+      background-color: $gray-l;
+    }
+  }
+}

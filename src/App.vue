@@ -1,28 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <transition name="fade" mode="out-in">
+      <div v-if="loaded" class="app-content colors__background_gray-l">
+        <table-filters/>
+        <table-custom/>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TableFilters from '@/components/TableFilters'
+import TableCustom from '@/components/TableCustom'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TableFilters,
+    TableCustom
+  },
+  created() {
+    this.$store.dispatch('table/loadData')
+  },
+  computed: {
+    loaded() {
+      return this.$store.getters['table/getStatus']
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped lang="scss">
+  @import './assets/style/base/grid';
+  .app-content {
+    padding: nonScalePx(10);
+
+    @media (max-width: $desktop-break-point) {
+      padding: pxToVwDesktop(10);
+    }
+  }
 </style>
