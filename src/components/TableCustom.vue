@@ -194,7 +194,7 @@ export default {
             }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: $mobile-break-point) {
             height: pxToVwDesktop(500);
             overflow-y: scroll;
         }

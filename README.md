@@ -1,4 +1,4 @@
-# vue-test
+# vue-test-table
 Example of a dynamic table in Vue that can be filtered and sorted.
 
 Tools used:

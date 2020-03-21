@@ -1,8 +1,8 @@
 <template>
     <div class="table-filters fonts__roboto_regular">
         <div class="table-filters__filter">
-            <span>Магазин</span>
-            <select-filter field="location" placeholder="Все магазины"/>
+            <span>Store</span>
+            <select-filter field="location" placeholder="All stores"/>
         </div>
     </div>
 </template>

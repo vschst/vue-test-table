@@ -1,5 +1,6 @@
 $default-size: 1920;
 $desktop-break-point: 1920px;
+$mobile-break-point: 768px;
 
 @function nonScalePx ($size) {
   @if $size == 0 {
